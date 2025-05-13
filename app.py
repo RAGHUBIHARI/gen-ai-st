@@ -30,5 +30,5 @@ if user_input:
     st.session_state["messages"].append({"role":"user","content":user_input})
     st.session_state["messages"].append({"role":"assistant","content":response.choices[0].message.content})
 
-if st.button(""Clear Chat):
+if st.button("Clear Chat"):
     st.session_state["messages"]=[]
